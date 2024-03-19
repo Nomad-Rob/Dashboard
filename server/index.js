@@ -25,3 +25,18 @@ app.use("/client", clientRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
+
+
+// Mongoose Setup
+const PORT = process.env.PORT || 9000; // Backup port if .env file is not available
+mongoose
+.connect(process.env.MONGO_URL, {
+  useNewUrlParser: true, // set up parameters for the connection
+  useUnifiedTopology: true,
+})
+.then(() => {
+  app.listen(PORT, () =>
+    console.log(`Server is running on port: ${PORT}`));
+  })
+  .catch((error) =>
+    console.log('${error} did not connect'));
