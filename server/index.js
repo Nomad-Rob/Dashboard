@@ -26,9 +26,9 @@ app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
 
+
 // Mongoose Setup
 const PORT = process.env.PORT || 9000; // Backup port if .env file is not available
-mongoose.set('strictQuery', false); // Allow for empty queries (e.g. /?
 mongoose
 .connect(process.env.MONGO_URL, {
   useNewUrlParser: true, // set up parameters for the connection
