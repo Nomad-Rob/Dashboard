@@ -22,3 +22,16 @@ I will be building a Dashboard App using React, Node, and MongoDB. The app will 
 - Mongoose: ( Mongoose for MongoDB object modeling )
 - MongoDB Aggregate: ( MongoDB Aggregate for data aggregation )
 
+## Getting Started
+- Clone the repository
+- Run `npm install` in the root directory
+- Run `npm install` in the client directory
+- Create a `.env` file in the root directory and add the following:
+```
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+```
+- Run `npm run dev` in the root directory
+- Open `http://localhost:3000` in your browser
+
+ADD More here
