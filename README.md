@@ -34,4 +34,6 @@ JWT_SECRET=your_jwt_secret
 - Run `npm run dev` in the root directory
 - Open `http://localhost:3000` in your browser
 
-ADD More here
+## Notes
+Stoppign at 45:50 timestamp
+s
